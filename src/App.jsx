@@ -5,10 +5,14 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 // import CatImage, { CUTEST_CAT as CAT } from './Image.jsx';
-import Image, { CUTEST_CAT, CUTEST_DOG } from "./Image.jsx";
+// import Image, { CUTEST_CAT, CUTEST_DOG } from "./Image.jsx";
+import Header, { num } from "./Header.jsx";
+import Cat from "./Cat.jsx";
 
 function App() {
     const [count, setCount] = useState(0);
+
+    console.log(num);
 
     return (
         <>
@@ -24,7 +28,7 @@ function App() {
                     />
                 </a>
             </div>
-            <h1>Vite + React</h1>
+            <Header />
             <div className="card">
                 <button onClick={() => setCount((count) => count + 1)}>
                     count is {count}
@@ -36,9 +40,10 @@ function App() {
             <p className="read-the-docs">
                 Click on the Vite and React logos to learn more
             </p>
-            <Image />
+            {/* <Image />
             {CUTEST_CAT}
-            {CUTEST_DOG}
+            {CUTEST_DOG} */}
+            <Cat />
         </>
     );
 }

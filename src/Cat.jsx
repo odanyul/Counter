@@ -1,18 +1,12 @@
 import Image from "./Image.jsx";
 
-const Cat = () => {
-    const catData = {
-        name: "Rumli",
-        age: 1,
-        gender: "male",
-    };
-
+const Cat = ({ name, age, gender }) => {
     return (
         <div>
             <Image />
-            <h3>{catData.name}</h3>
-            <p>Age: {catData.age}</p>
-            <p>Gender: {catData.gender}</p>
+            <h3>{name}</h3>
+            <p>Age: {age}</p>
+            <p>Gender: {gender}</p>
         </div>
     );
 };

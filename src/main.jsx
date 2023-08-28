@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Landing from "./Landing.jsx";
 import "./index.css";
+import Counter from "./08.28/Counter.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <Landing />
+        <Counter />
     </React.StrictMode>
 );

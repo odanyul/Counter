@@ -1,4 +1,5 @@
 {
+  "homepage": "odanyul.github.io/<Counter>,",
   "name": "second-react-app",
   "private": true,
   "version": "0.0.0",
@@ -10,8 +11,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
